@@ -18,4 +18,8 @@ export class CalculationComponent implements OnInit {
       dollar: [''],
     });
   }
+
+  formatIntoCurrency(value, inCurrency: string) {
+    const temp = this.currencyPipe.transform(value, inCurrency);
+  }
 }
