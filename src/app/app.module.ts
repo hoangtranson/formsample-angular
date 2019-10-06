@@ -3,14 +3,14 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { UserCardComponent } from './shared/user-card/user-card.component';
-import { CheckOutComponent } from './shared/check-out/check-out.component';
+import { CalculationComponent } from './shared/components/calculation/calculation.component';
+import { CalHistoryComponent } from './shared/components/cal-history/cal-history.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    UserCardComponent,
-    CheckOutComponent
+    CalculationComponent,
+    CalHistoryComponent
   ],
   imports: [
     BrowserModule,
