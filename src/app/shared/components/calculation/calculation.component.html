@@ -1,14 +1,14 @@
 <h4 class="mb-3">Calculator</h4>
 <p>1 Malaysian Ringgit equals 0.24 United States Dollar</p>
-<form>
+<form [formGroup]="calculationForm">
   <div class="row">
     <div class="col-md-6 mb-3">
       <label for="ringgit">Ringgit (RM)</label>
-      <input type="text" class="form-control" id="ringgit">
+      <input type="text" class="form-control" id="ringgit" formControlName="ringgit">
     </div>
     <div class="col-md-6 mb-3">
       <label for="dollar">Dollar ($)</label>
-      <input type="text" class="form-control" id="dollar">
+      <input type="text" class="form-control" id="dollar" formControlName="dollar">
     </div>
   </div>
 </form>
